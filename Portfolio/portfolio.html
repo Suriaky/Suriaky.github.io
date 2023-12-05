@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mattis Ichanh</title>
+</head>
+<header class="header">
+    <a class="home" href="portfolio.html#">Mattis Ichanh</a>
+    <nav>
+        <ul class="nav_links">
+            </li>
+            <li><a href="portfolio.html#infos">Qui suis-je?</a></li>
+            <li><a href="portfolio.html#projets">Projets</a></li>
+            <li><a href="portfolio_ecole.html">Ecole</a></li>
+            <li><a href="portfolio.html#contact">Liens Utiles</a></li>
+            <li><button onclick="myFunction()">Lumière</button></li>
+            <script>
+                function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {myFunction()};
+
+                // Get the navbar
+                var navbar = document.getElementById("navbar");
+                
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+                
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <h1 class="welcome">Bienvenue sur mon portfolio !</h1>
+
+
+    <h1 id="infos">Qui suis-je?</h1>
+    <div class="p_container">
+
+        <div class="p_box">
+            <img class="avatar" src="images/avatar.png">
+        </div>
+
+        <div class="p_box">
+            <p><strong>Hello, je suis Mattis</strong>, j'ai 19 ans et je suis actuellement en 2ème année de BTS SIO (SLAM) chez <strong>IPSSI</strong></p>
+            <br>
+            <p>Je suis passionné de cinéma, dessin, musique, jeux vidéos et bien-sûr d'informatique.</p>
+            <br>
+            <p>Au cours de mon apprentissage, j'ai pu apprendre les langages suivants</p>
+            <ul>
+                <li>Java</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+            <p>avec l'utilisation de VSCode, Eclipse, GitLab</p>
+            </p>
+            <br>
+            <p>Autres compétences: Piano, Dessin, Adobe Animate, After Effects, Photoshop, Vegas Pro</p>
+            <a class="c_box" href="ichanh-mattis-cv.pdf" target="_blank">
+                <img class="carre" src="images/logo_cv.png">
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <h1 id="projets">Projets</h1>
+    <div class="p_container">
+
+        <div class="p_box">
+            <div class="fullwrap">
+                <a class="button" href="http://www.slamulator.ipssi-sio.fr/grp4/index.php" target="_blank">
+                    <img src="images/projet_fight.png">
+                    <div class="fullcap">
+                        <h1>Jeu Calcul Mental</h1><br>
+                        <p>Il s'agit d'un mini jeu de calcul mental réalisé en Php, JavaScript et Java</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="p_box">
+            <div class="fullwrap">
+                <a class="button" href="https://harmony.ipssi-sio.fr/index.php" target="_blank">
+                    <img src="images/projet_harmony.png">
+                    <div class="fullcap">
+                        <h1>Harmony</h1>
+                        <p>Site de bibliothèque avec la possibilité de réservation réalisé en Php, JavaScript et Java. La base de données a été faite en SQL</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <h1 id="contact">Liens Utiles</h1>
+    <div class="c_container">
+
+        <a class="c_box" href="https://www.linkedin.com/in/mattis-i-63588a247/" target="_blank">
+            <img class="carre" src="images/logo_linkedin.png">
+        </a>
+
+        <a class="c_box" href="https://gitlab.com/Suriaky" target="_blank">
+            <img class="carre" src="images/logo_gitlab.png">
+        </a>
+
+        <a class="c_box" href="https://www.instagram.com/suriaky/" target="_blank">
+            <img class="carre" src="images/logo_instagram.png">
+        </a>
+
+        <a class="c_box" href="https://www.youtube.com/c/Suriaky" target="_blank">
+            <img class="carre" src="images/logo_youtube.png">
+        </a>
+
+    </div>
+
+</body>
+
+</html>

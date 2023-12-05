@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Mattis Ichanh</title>
+</head>
+<header class="header">   
+    
+    <div class="navbar">    
+        <a class="home" href="portfolio.html#">Mattis Ichanh</a>
+        <nav><ul class="nav_links">
+        <li><a href="portfolio.html#infos">Qui suis-je?</a></li>
+        <li><a href="portfolio.html#projets">Projets</a></li>
+        <li><a href="portfolio_ecole.html">Ecole</a></li>
+        <li><a href="portfolio.html#contact">Liens Utiles</a></li>
+        <li><button onclick="myFunction()">Lumière</button></li>
+        </ul></nav>
+    </div>
+    
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+          
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+          
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</header>
+<body>
+    
+    <h1 id="stage">Ecole</h1>
+
+    <div class="p_container">
+
+        <div class="p_box">
+            <img class="carre" src="images/logo_ipssi.jpg">
+        </div>
+
+        <div class="p_box">
+            <p>Le BTS SIO SLAM est un diplôme dans le domaine informatique.</p>
+            <p>Ce brevet de technicien supérieur se prépare en deux ans après le bac.</p>
+            <p>La formation a pour thème principal se penche sur les services informatiques aux organisations</p>
+            <p>plus précisément, sur l'option SLAM (solutions logicielles et applications métiers)</p>
+        </div>
+
+    </div>
+
+    
+    <h1 id="stage">Stage</h1>
+
+    <div class="p_container">
+
+        <div class="p_box">
+            <img class="carre" src="images/logo_ics.png">
+        </div>
+
+        <div class="p_box">
+            <p>A la fin de cette première année, un Stage a été réalisé chez l'ICS lors duquel 
+                j'ai pu découvrir le monde professionnel et réaliser diverses missions tel que 
+                le Développement d'outils pour entreprises, la Correction de problèmes d’hébergement,
+                la Conception de script pour extraction de données, la Mise en forme de données à l'aide de PowerBi et bien d'autres..</li>
+            </p><br>
+            <p>Fondée en 98 par la FCD (Fédération Française du Commerce et de la Distribution)
+                Vise à améliorer les conditions de travail en usine
+                Mandater des cabinets d’audits sociaux/environnementaux
+                Mise en œuvre de solutions pour la conformité
+                Partenariat avec l’ITC (International Trade Center) depuis 2015
+                Sustainability Map: outil de traçabilité produit
+            </p><br>
+            <p>Ce stage étant ma première expérience professionnelle, m'a beaucoup apporté notamment 
+                au niveau du travail de groupe en entreprise.
+            </p>
+        </div>
+
+    </div>
+        
+
+    <h1>Veille Technologique</h1>
+
+    <div class="p_container">
+
+        <div class="p_box">
+            <p>Une veille technologique permet d’être informé en continu sur les évolutions et les évènements liés à un sujet donné.</p>
+            <p>Cette veille peut se faire au moyen de différents outils, dans le but d’agréger plusieurs sources d’informations et de les tenir à jour.</p>
+        </div>
+
+    </div>
+    
+    <h1>Le Big Data</h1>
+    
+    <div class="p_container">
+
+        <div class="p_box">
+            <a class="c_box" href="Le Big Data.pptx" target="_blank">
+                <img class="carre" src=#>
+            </a>    
+        </div>
+
+    </div>
+    
+
+    <h1>Tableau de Synthèse</h1>
+    <div class="p_container">
+
+        <div class="p_box">
+            <a class="c_box" href="tableau_synthese.xlsx" target="_blank">
+                <img class="carre" src="images/logo_tableau_synthese.jpg">
+            </a>
+        </div>
+    </div>
+<br>
+    
