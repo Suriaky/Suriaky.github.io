@@ -1,49 +1,48 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Mattis Ichanh</title>
 </head>
-<header class="header">   
-    
-    <div class="navbar">    
-        <a class="home" href="portfolio.html#">Mattis Ichanh</a>
-        <nav><ul class="nav_links">
-        <li><a href="portfolio.html#infos">Qui suis-je?</a></li>
-        <li><a href="portfolio.html#projets">Projets</a></li>
-        <li><a href="portfolio_ecole.html">Ecole</a></li>
-        <li><a href="portfolio.html#contact">Liens Utiles</a></li>
-        <li><button onclick="myFunction()">Lumière</button></li>
-        </ul></nav>
-    </div>
-    
-    <script>
-        function myFunction() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
-        }
+<header class="header">
+    <a class="home" href="index.html">Mattis Ichanh</a>
+    <nav>
+        <ul class="nav_links">
+            </li>
+            <li><a href="index.html#infos">Qui suis-je?</a></li>
+            <li><a href="index.html#projets">Projets</a></li>
+            <li><a href="ecole.html">Ecole</a></li>
+            <li><a href="index.html#contact">Liens Utiles</a></li>
+            <li><button onclick="myFunction()">Lumière</button></li>
+            <script>
+                function myFunction() {
+                    var element = document.body;
+                    element.classList.toggle("dark-mode");
+                }
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function() {myFunction()};
 
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        // Get the navbar
-        var navbar = document.getElementById("navbar");
-          
-        // Get the offset position of the navbar
-        var sticky = navbar.offsetTop;
-          
-        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-    </script>
-
+                // Get the navbar
+                var navbar = document.getElementById("navbar");
+                
+                // Get the offset position of the navbar
+                var sticky = navbar.offsetTop;
+                
+                // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                    if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                    } else {
+                        navbar.classList.remove("sticky");
+                    }
+                }
+            </script>
+        </ul>
+    </nav>
 </header>
+
 <body>
     
     <h1 id="stage">Ecole</h1>
