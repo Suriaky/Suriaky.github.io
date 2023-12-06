@@ -23,11 +23,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 23px 10%;
+    padding-inline: 5%;
+    padding-block: 0.5%;
     border-bottom: 1px solid #CAC4CE;
     background-color: #242038;
     background-image:url("images/bg_grain.png");
     background-size: 350px auto;
+}
+.lumiere {
+    
+    height: 50px;
 }
 .home {
     margin-right: auto;
@@ -51,14 +56,6 @@ header {
 }
 .navbar {
     overflow: hidden;
-}
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-.sticky + .content {
-    padding-top: 60px;
 }
 body {
     background-color: #242036;
@@ -101,12 +98,6 @@ strong {
     align-items: center;
     padding: 5%;
 }
-.gauche {
-  grid-column: 1;
-}
-.droite {
-  grid-column: 2;
-}
 .p_container {
     display: flex;
     flex-wrap: wrap;
@@ -122,12 +113,11 @@ strong {
     margin: auto;
 }
 .carre {
-    max-width: 500px;
-    width: 500px;
-    height: 500px;
+    max-width: 250px;
+    width: 250px;
+    height: 250px;
 }
 .avatar{
-    
     max-width: 500px;
     width: 500px;
     height: 500px;
@@ -186,6 +176,7 @@ strong {
     .header {
         background-color: #E6F0E9;
     }
+    
 }
 /* image responsive */
 .fullwrap img { width: 500px; }
