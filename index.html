@@ -21,20 +21,21 @@
 
     </nav>
     
-    <a type="button" onclick="myFunction()"><img class="lumiere" src="images/light_off.png" alt=""></a>     
+    <a type="button" onclick="myFunction()"><img class="lumiere" src="images/light_off.png" id="lumiere" alt=""></a>     
     <script>
         function myFunction() {
             var element = document.body;
             element.classList.toggle("dark-mode");
-            var img = document.getElementById('lumiere');
-
-            if (img.src.includes('light_on.png')) {
-                img.src = "images/light_off.png";
+            var image = document.getElementById('lumiere');
+            if (image.src.match("images/light_off.png")) {
+                image.src = "images/light_on.png";
             } else {
-                img.src = "images/light_on.png";
+                image.src = "images/light_off.png";
             }
         }
     </script>
+    
+    
     
 </header>
 
