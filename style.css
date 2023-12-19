@@ -16,6 +16,7 @@ li, a {
     text-decoration: none;
 }
 header {
+    transition: 0.5s ;
     position: fixed;
     left: 0px;  
     right: 0px;  
@@ -58,6 +59,7 @@ header {
     overflow: hidden;
 }
 body {
+    transition: 0.5s ;
     background-color: #242036;
     background-image:url("images/bg_grain.png");
     background-size: 350px auto;
@@ -164,18 +166,17 @@ strong {
     height: 250px;
 }
 .dark-mode {
-    transition: all 0.3s ease 0s;
     background-color: #E6F0E9;
     color: #14303f;
     .nav_links li a {
-        color: #14303f;
-    }
-    .home {
-        color: #14303f;
-    }
-    .header {
-        background-color: #E6F0E9;
-    }
+    color: #14303f;
+}
+.home {
+    color: #14303f;
+}
+.header {
+    background-color: #E6F0E9;
+}
     
 }
 /* image responsive */
